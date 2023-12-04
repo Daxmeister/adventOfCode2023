@@ -16,8 +16,23 @@ def get_number_from_file(file_path):
     total_number = 0
     with open(file_path, 'r') as file:
         for line in file:
+            #print(int(return_calibration_value_of_row(line.strip())))
             total_number += int(return_calibration_value_of_row(line.strip()))
     return total_number
 
 
 print(get_number_from_file('day1input.txt'))
+print(get_number_from_file('day1input2modified.txt'))
+#print(get_number_from_file('dayonetest.txt'))
+
+
+# Part 1 replaces
+# one -> o1e
+# two -> t2o
+# three -> t3e
+# Four -> f4r
+# Five -> f5e
+# Six -> s6x
+# Seven -> s7n
+# Eight -> e8t
+# Nine -> n9e
