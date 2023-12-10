@@ -8,7 +8,7 @@ class Number():
         self.is_adjacent_to_symbol = False # TODO
         
     def check_if_not_dot_or_int(self, character):
-        if type(character) == int or character == ".":
+        if type(character) == int or character == ".": # TODO kommer inte funka eftersom de inte är int, de är str
             return False
         else:
             return True
